@@ -1,0 +1,121 @@
+:root {
+  --bg: #f4f4ef;
+  --text: #1f2b20;
+  --panel: #fffef8;
+  --brand: #1b5e5a;
+  --accent: #be6f2f;
+  --border: #d8d3c3;
+  --page-gradient:
+    radial-gradient(circle at 10% 0%, #efe8d5, transparent 35%),
+    radial-gradient(circle at 90% 20%, #dcebe6, transparent 30%),
+    var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--page-gradient);
+  color: var(--text);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+
+.hero {
+  padding: 2rem 0 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 0.85rem;
+}
+
+h1 {
+  margin: 0.3rem 0 0.8rem;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.intro {
+  max-width: 65ch;
+  font-size: 1.05rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 0.6rem;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border: none;
+  background: var(--page-gradient);
+  color: var(--brand);
+  text-rendering: geometricPrecision;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 6px 14px rgba(31, 43, 32, 0.08);
+  transition: filter 120ms ease, transform 120ms ease;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.button-ghost {
+  background: transparent;
+  color: var(--brand);
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 1.1rem 1rem;
+  margin-top: 1rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+.highlight {
+  border-color: var(--accent);
+}
+
+a {
+  color: var(--brand);
+}
+
+@media (min-width: 720px) {
+  .card {
+    padding: 1.25rem 1.4rem;
+  }
+}

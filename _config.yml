@@ -1,0 +1,11 @@
+title: CT 2026 Satellite Cambridge
+description: CT 2026 Satellite Event in Cambridge, 13-18 July 2026.
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+exclude:
+  - vendor
+  - .bundle
