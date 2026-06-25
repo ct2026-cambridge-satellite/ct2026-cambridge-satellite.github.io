@@ -34,6 +34,12 @@ description: CT2026 Satellite Event in Cambridge, 13-18 July 2026.
         <a href="https://www.cst.cam.ac.uk/directions" target="_blank"
         rel="noopener">directions</a> page for the latest travel
         information.</li>
+      <li><strong>Accommodation:</strong> Accommodation in Cambridge may be
+        limited due to other conferences, so we recommend that you book early.
+        In addition to the usual web platforms for short term accommodation,
+        it is possible to book rooms within some colleges through
+        <a href="https://www.universityrooms.com/" target="_blank"
+        rel="noopener">universityrooms.com</a></li>
       <li><strong>Programme:</strong> <em>To be announced soon</em></li>
     </ul>
   </section>
