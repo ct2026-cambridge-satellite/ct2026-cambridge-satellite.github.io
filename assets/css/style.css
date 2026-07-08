@@ -106,6 +106,93 @@ h2 {
   padding-left: 1.2rem;
 }
 
+.calendar-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-top: 0.8rem;
+  font-size: 0.93rem;
+}
+
+.calendar-table thead th {
+  background: #eef3ee;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 0.75rem 0.85rem;
+  border-top: 1px solid var(--border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.calendar-table tbody th {
+  white-space: nowrap;
+  background: #f7f4e8;
+  font-variant-numeric: tabular-nums;
+}
+
+.calendar-table thead th {
+  border-top: 0;
+}
+
+.slot {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: normal;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.slot-invited {
+  background: #cfe7e6;
+  color: #1f5450;
+}
+
+.slot-plenary {
+  background: #e3f0ea;
+  color: #2a5e57;
+}
+
+.slot-parallel {
+  background: #f5e9b8;
+  color: #6f5812;
+}
+
+.slot-break {
+  background: #eee3d1;
+  color: #6a5b3c;
+}
+
+.slot-lightning {
+  background: #efc0c0;
+  color: #7a2f2f;
+}
+
+.slot-muted {
+  background: #f0f0f0;
+  color: #5d5d5d;
+}
+
+.small-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.92rem;
+  color: #3d4f3e;
+}
+
 .highlight {
   border-color: var(--accent);
 }
@@ -117,5 +204,24 @@ a {
 @media (min-width: 720px) {
   .card {
     padding: 1.25rem 1.4rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .calendar-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.88rem;
+  }
+
+  .calendar-table th,
+  .calendar-table td {
+    min-width: 96px;
+    padding: 0.6rem 0.55rem;
+  }
+
+  .calendar-table tbody th {
+    min-width: 86px;
   }
 }
